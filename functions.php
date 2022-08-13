@@ -46,7 +46,7 @@ add_action( 'after_setup_theme', function() {
      * Logo and featured image
      */
     'default_featured_image'  => null,
-    'logo'                    => '/svg/logo.svg',
+    'logo'                    => '/svg/church-svgrepo-com-converted.svg',
 
     /**
      * Custom setting group settings when using Air setting groups plugin.
@@ -145,8 +145,6 @@ add_action( 'after_setup_theme', function() {
     // Set the value to 'all' to allow all blocks everywhere
    'allowed_blocks' => [
       'default' => [
-      ],
-      'post' => [
         'core/archives',
         'core/audio',
         'core/buttons',
@@ -205,3 +203,4 @@ require get_theme_file_path( '/inc/template-tags.php' );
 // Run theme setup
 add_action( 'init', __NAMESPACE__ . '\theme_setup' );
 add_action( 'after_setup_theme', __NAMESPACE__ . '\build_theme_support' );
+

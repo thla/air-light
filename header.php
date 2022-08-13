@@ -33,13 +33,14 @@ namespace Air_Light;
   <?php wp_body_open(); ?>
   <div id="page" class="site">
 
-    <div class="nav-container">
+    <div class="nav-container <?php if (is_front_page()) { echo 'hero-image'; }; ?>">
       <header class="site-header">
 
         <?php get_template_part( 'template-parts/header/branding' ); ?>
         <?php get_template_part( 'template-parts/header/navigation' ); ?>
-
+        
       </header>
+      <?php if (is_front_page()) { get_template_part( 'template-parts/header/hero' ); }; ?>
     </div><!-- .nav-container -->
 
-    <div class="site-content">
+    <div id="main-content" class="site-content">

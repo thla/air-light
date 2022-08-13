@@ -17,15 +17,41 @@
 
 namespace Air_Light;
 
-the_post();
+/* the_post();
 
 get_header(); ?>
 
 <main class="site-main">
+  
+<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
   <?php
     the_content();
     air_edit_link();
   ?>
+</main>
+
+<?php get_footer(); */
+
+the_post();
+get_header(); ?>
+
+<main class="site-main">
+
+  <section class="block block-single has-light-bg">
+    <article class="article-content">
+
+      <h1><?php the_title(); ?></h1>
+
+      <?php the_content();
+     air_edit_link();
+
+      entry_footer();
+
+      ?>
+
+    </article>
+  </section>
+
 </main>
 
 <?php get_footer();

@@ -22,6 +22,11 @@
   a {
     align-items: center;
     display: flex;
+    color: var(--color-main-level);
+  }
+
+  a:hover {
+    color: white;
   }
 }
 
@@ -36,7 +41,98 @@
   display: grid;
 }
 
-.site-main::after {
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: url("header-bg.jpg");
+
+
+  /* Set a specific height */
+  height: 100vh;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+/*   text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;    
+  height:100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-text-primary {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-headings);
+  margin-bottom: var(--margin-between-paragraphs);
+  //margin-top: var(--margin-between-paragraphs);
+  font-size: var(--font-size-hero);
+  text-align: center;
+}
+ 
+.hero-text-secondary {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-headings);
+  margin-bottom: calc(var(--margin-between-paragraphs) / 2);
+  //margin-top: var(--margin-between-paragraphs);
+  font-size: 20px;
+  text-align: center;
+}
+
+/* hero arrow down start */
+.scroll-to {
+  width: 45px;
+  height: 26px;
+  margin-top: 27px;
+  position: relative;
+  background: url(header__scroll.png) no-repeat center center;
+  content: "";
+  display: block;
+  animation: scrollToBounce 1s ease infinite;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+@keyframes scrollToBounce {
+  from {
+    top: -5px;
+  }
+
+  25% {
+    top: -20px;
+  }
+
+  50% {
+    top: -5px;
+  }
+
+  75% {
+    top: -10px;
+  }
+
+  to {
+    top: -5px;
+  }
+}
+
+
+
+/* .site-main::after {
   align-items: center;
   // stylelint-disable-next-line
   background-image: linear-gradient(var(--color-black), var(--color-science-blue)), linear-gradient(var(--color-black), var(--color-science-blue));
@@ -63,5 +159,5 @@
   position: relative;
   text-align: center;
   width: calc(100% - 4rem);
-}
+} */
 // --clip--

@@ -5,7 +5,7 @@
 // stylelint-disable no-descending-specificity
 
 // Settings
-$absolute-navigation: true;
+$absolute-navigation: false;
 $use-dropdown-bubble: true;
 $use-dropdown-toggle-animation: true;
 
@@ -29,15 +29,19 @@ $use-dropdown-toggle-animation: true;
   --width-sub-menu: 22rem;
 
   // Colors
-  --color-background-nav-desktop: var(--color-white);
-  --color-background-sub-menu: var(--color-white);
+  --color-background-nav-desktop: #2a2d3e; //#23282d;
+  --color-background-sub-menu: var(--color-background-nav-mobile-header);  // var(--color-white);
   --color-border-sub-menu: rgb(41 44 61 / .05);
-  --color-dropdown-toggle: var(--color-valhalla);
-  --color-sub-menu: var(--color-valhalla);
-  --color-hover-main-level: var(--color-link-text);
-  --color-hover-sub-menu: var(--color-valhalla);
-  --color-main-level: var(--color-black);
-  --color-current: var(--color-link-text);
+  //--color-dropdown-toggle: var(--color-valhalla);
+  --color-dropdown-toggle: rgba(240, 250, 251, 0.829);
+  --color-sub-menu: rgba(240, 250, 251, 0.829); //var(--color-valhalla);
+  //--color-hover-main-level: var(--color-link-text);
+  --color-hover-main-level: white;
+  --color-hover-sub-menu: white; //var(--color-valhalla);
+  //--color-main-level: var(--color-black);
+  --color-main-level: rgba(240, 250, 251, 0.829);
+  //--color-current: var(--color-link-text);
+  --color-current: white;
 
   // Font styles
   --font-size-main-level: var(--font-size-16);
@@ -52,6 +56,7 @@ $use-dropdown-toggle-animation: true;
 }
 
 @media only screen and (min-width: $width-max-mobile) {
+
   .nav-container {
     @if $absolute-navigation == false {
       background-color: var(--color-background-nav-desktop);
@@ -362,9 +367,9 @@ $use-dropdown-toggle-animation: true;
     .menu-item-has-children::before {
       // Use of non-variable is acceptable here because bubble needs it
       // stylelint-disable-next-line sh-waqar/declaration-use-variable
-      border-color: transparent transparent var(--color-white);
+      border-color: transparent transparent black; //var(--color-white);
       border-style: solid;
-      border-width: 0 5px 5px;
+      border-width: 0 10px 10px;
       bottom: -10px;
       content: '';
       display: block;
