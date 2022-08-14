@@ -339,7 +339,6 @@ a.is-external-link.global-link::after,a.is-external-link.no-external-link-indica
 
 .wp-block .acf-block-preview .button,.wp-block .acf-block-preview button,.wp-block .acf-block-preview input[type=button],.wp-block .acf-block-preview input[type=reset],.wp-block .acf-block-preview input[type=submit] {
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   background-color: var(--color-button-background);
   border: var(--border-width-input-field) solid var(--color-button-background);
@@ -448,7 +447,6 @@ a.is-external-link.global-link::after,a.is-external-link.no-external-link-indica
 }
 .article-content .wp-block-button__link,.editor-styles-wrapper .wp-block-button__link {
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   background-color: var(--color-button-background);
   border: var(--border-width-input-field) solid var(--color-button-background);
@@ -1247,8 +1245,7 @@ p {
 .has-lazyload > [loading=lazy] {
   height: 100%;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: absolute;
   top: 0;
   width: 100%;
@@ -1499,7 +1496,6 @@ p {
 }
 .editor-styles-wrapper .acf-block-preview .block .site-footer .button,.editor-styles-wrapper .acf-block-preview .block .site-footer button,.editor-styles-wrapper .acf-block-preview .block .site-footer input[type=button],.editor-styles-wrapper .acf-block-preview .block .site-footer input[type=reset],.editor-styles-wrapper .acf-block-preview .block .site-footer input[type=submit],.editor-styles-wrapper .acf-block-preview .block .site-main .button,.editor-styles-wrapper .acf-block-preview .block .site-main button,.editor-styles-wrapper .acf-block-preview .block .site-main input[type=button],.editor-styles-wrapper .acf-block-preview .block .site-main input[type=reset],.editor-styles-wrapper .acf-block-preview .block .site-main input[type=submit] {
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   background-color: var(--color-button-background);
   border: var(--border-width-input-field) solid var(--color-button-background);
@@ -1554,7 +1550,6 @@ p {
 }
 .editor-styles-wrapper .acf-block-preview .block select {
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   background-image: url(../../svg/select.svg);
   background-position: right var(--gap-select-icon) center;
@@ -1594,14 +1589,6 @@ p {
   text-decoration: none;
   transition: background 0.55s;
 }
-.editor-styles-wrapper .acf-block-preview .block input[type=email]::-moz-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=month]::-moz-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=number]::-moz-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=password]::-moz-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=search]::-moz-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=tel]::-moz-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=text]::-moz-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=url]::-moz-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=week]::-moz-placeholder,.editor-styles-wrapper .acf-block-preview .block textarea::-moz-placeholder {
-  color: var(--color-placeholder);
-  opacity: var(--opacity-placeholder);
-}
-.editor-styles-wrapper .acf-block-preview .block input[type=email]:-ms-input-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=month]:-ms-input-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=number]:-ms-input-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=password]:-ms-input-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=search]:-ms-input-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=tel]:-ms-input-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=text]:-ms-input-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=url]:-ms-input-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=week]:-ms-input-placeholder,.editor-styles-wrapper .acf-block-preview .block textarea:-ms-input-placeholder {
-  color: var(--color-placeholder);
-  opacity: var(--opacity-placeholder);
-}
 .editor-styles-wrapper .acf-block-preview .block input[type=email]::placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=month]::placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=number]::placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=password]::placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=search]::placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=tel]::placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=text]::placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=url]::placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=week]::placeholder,.editor-styles-wrapper .acf-block-preview .block textarea::placeholder {
   color: var(--color-placeholder);
   opacity: var(--opacity-placeholder);
@@ -1610,14 +1597,6 @@ p {
   background-color: var(--color-background-input-field);
   border-color: var(--color-border-forms-focus);
   color: var(--color-form-text);
-}
-.editor-styles-wrapper .acf-block-preview .block input[type=email]:focus::-moz-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=month]:focus::-moz-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=number]:focus::-moz-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=password]:focus::-moz-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=search]:focus::-moz-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=tel]:focus::-moz-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=text]:focus::-moz-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=url]:focus::-moz-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=week]:focus::-moz-placeholder,.editor-styles-wrapper .acf-block-preview .block textarea:focus::-moz-placeholder {
-  color: var(--color-placeholder-focus);
-  opacity: var(--opacity-placeholder-focus);
-}
-.editor-styles-wrapper .acf-block-preview .block input[type=email]:focus:-ms-input-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=month]:focus:-ms-input-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=number]:focus:-ms-input-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=password]:focus:-ms-input-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=search]:focus:-ms-input-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=tel]:focus:-ms-input-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=text]:focus:-ms-input-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=url]:focus:-ms-input-placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=week]:focus:-ms-input-placeholder,.editor-styles-wrapper .acf-block-preview .block textarea:focus:-ms-input-placeholder {
-  color: var(--color-placeholder-focus);
-  opacity: var(--opacity-placeholder-focus);
 }
 .editor-styles-wrapper .acf-block-preview .block input[type=email]:focus::placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=month]:focus::placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=number]:focus::placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=password]:focus::placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=search]:focus::placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=tel]:focus::placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=text]:focus::placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=url]:focus::placeholder,.editor-styles-wrapper .acf-block-preview .block input[type=week]:focus::placeholder,.editor-styles-wrapper .acf-block-preview .block textarea:focus::placeholder {
   color: var(--color-placeholder-focus);
